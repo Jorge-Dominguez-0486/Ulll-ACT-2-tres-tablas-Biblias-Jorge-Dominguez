@@ -1,5 +1,50 @@
 # Proyecto: Biblias - UIII_Biblias_0486
 
+```python
+# 1. Crear la carpeta principal del proyecto
+mkdir UIII_Biblias_0486
+
+# 2. Navegar a la carpeta del proyecto
+cd UIII_Biblias_0486
+
+# 4. Crear el entorno virtual llamado .venv
+python3 -m venv .venv
+
+# 5. y 6. Activar el entorno virtual
+# (Linux/macOS)
+source .venv/bin/activate
+
+# (Windows - Alternativa si el comando anterior falla)
+# .venv\Scripts\activate
+
+# 7. Instalar el framework Django
+pip install Django
+
+# 8. Crear el proyecto backend_Biblia sin duplicar la carpeta
+# El punto final indica que se cree en la carpeta actual (UIII_Biblias_0486)
+django-admin startproject backend_Biblia .
+
+# 11. Crear la aplicación app_Biblia
+python manage.py startapp app_Biblia
+
+# --- Comandos de Configuración y Base de Datos ---
+
+# Generar los archivos de migración (basados en models.py)
+# (Esto asume que ya se configuró INSTALLED_APPS en settings.py y models.py está listo)
+python manage.py makemigrations
+
+# Aplicar las migraciones a la base de datos (crea las tablas)
+python manage.py migrate
+
+# Crear un superusuario para acceder al panel de administración (admin.py)
+python manage.py createsuperuser
+
+# 31. Finalmente, ejecutar el servidor en el puerto 0486
+# 9. El servidor estará disponible en la URL http://127.0.0.1:0486/
+python manage.py runserver 0.0.0.0:0486
+
+```
+
 ## models.py
 ```python
 from django.db import models
