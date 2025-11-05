@@ -44,6 +44,38 @@ python manage.py createsuperuser
 python manage.py runserver 0.0.0.0:0486
 
 ```
+## Estructura del Proyecto UIII_Biblias_0486
+```python
+UIII_Biblias_0486/
+├── .venv/
+├── backend_Biblia/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── app_Biblia/
+│   ├── migrations/
+│   │   └── __init__.py
+│   ├── templates/
+│   │   ├── base.html
+│   │   ├── footer.html
+│   │   ├── inicio.html
+│   │   ├── navbar.html
+│   │   └── cliente/
+│   │       ├── agregar_cliente.html
+│   │       ├── actualizar_cliente.html
+│   │       ├── borrar_cliente.html
+│   │       └── ver_clientes.html
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+└── manage.py
+```
 
 ## models.py
 ```python
