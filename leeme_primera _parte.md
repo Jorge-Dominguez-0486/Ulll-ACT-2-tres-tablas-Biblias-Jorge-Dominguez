@@ -15,7 +15,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 
 # (Windows - Alternativa si el comando anterior falla)
-# .venv\Scripts\activate
+.venv\Scripts\activate
 
 # 7. Instalar el framework Django
 pip install Django
